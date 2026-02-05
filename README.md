@@ -1,17 +1,17 @@
-# PriceDrop Guard
+# Warranty Wallet
 
-Never miss a price drop.
+Keep every warranty in one place.
 
-Track your purchases, watch for price drops, and claim refunds before the return
-window closes.
+Store receipts, track warranty expiry dates, and generate claim-ready exports in
+seconds.
 
 ## Features
 
-- Track purchases via receipt forwarding or product links
-- Price drop alerts
-- Return window countdowns
-- Price history
-- Price-match playbook
+- Receipt vault (upload, scan, or forward)
+- Warranty expiry reminders
+- Serial + model storage
+- Claim checklist + exportable PDF
+- Family sharing
 
 ## Local Development
 
@@ -22,7 +22,7 @@ npm install
 Create `.env.local`:
 
 ```env
-DATABASE_URL="postgresql://user:password@host:5432/pricedropguard"
+DATABASE_URL="postgresql://user:password@host:5432/warrantywallet"
 ```
 
 Then run:
@@ -42,10 +42,10 @@ Body:
 ```json
 {
   "email": "you@email.com",
-  "company": "Amazon, Zara",
-  "volume": "Weekly",
+  "company": "Apple, Dyson",
+  "volume": "Monthly",
   "stack": "Electronics",
-  "pain": "Missing price drops"
+  "pain": "Missing warranty deadlines"
 }
 ```
 

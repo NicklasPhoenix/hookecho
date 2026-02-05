@@ -13,23 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PriceDrop Guard — Never miss a price drop",
+  title: "Warranty Wallet — Keep every warranty in one place",
   description:
-    "Track your purchases, watch for price drops, and claim refunds before the return window closes.",
-  metadataBase: new URL("https://pricedropguard.vercel.app"),
+    "Store receipts, track warranty expiry dates, and generate claim-ready exports in seconds.",
+  metadataBase: new URL("https://warrantywallet.vercel.app"),
   openGraph: {
-    title: "PriceDrop Guard — Never miss a price drop",
+    title: "Warranty Wallet — Keep every warranty in one place",
     description:
-      "Track your purchases, watch for price drops, and claim refunds before the return window closes.",
-    url: "https://pricedropguard.vercel.app",
-    siteName: "PriceDrop Guard",
+      "Store receipts, track warranty expiry dates, and generate claim-ready exports in seconds.",
+    url: "https://warrantywallet.vercel.app",
+    siteName: "Warranty Wallet",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PriceDrop Guard — Never miss a price drop",
+    title: "Warranty Wallet — Keep every warranty in one place",
     description:
-      "Track your purchases, watch for price drops, and claim refunds before the return window closes.",
+      "Store receipts, track warranty expiry dates, and generate claim-ready exports in seconds.",
   },
 };
 

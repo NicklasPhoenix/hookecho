@@ -11,8 +11,8 @@ const frequencyOptions = [
 
 const categoryOptions = [
   "Electronics",
-  "Fashion",
-  "Home & Kitchen",
+  "Appliances",
+  "Home",
   "Beauty",
   "Kids",
   "Other",
@@ -32,7 +32,7 @@ export function WaitlistForm({ source = "hero" }: { source?: string }) {
     const formData = new FormData(event.currentTarget);
     const payload = {
       email: String(formData.get("email") || ""),
-      company: String(formData.get("stores") || ""),
+      company: String(formData.get("brands") || ""),
       volume: String(formData.get("frequency") || ""),
       stack: String(formData.get("category") || ""),
       pain: String(formData.get("pain") || ""),
@@ -72,17 +72,17 @@ export function WaitlistForm({ source = "hero" }: { source?: string }) {
             name="email"
             required
             placeholder="you@email.com"
-            className="w-full rounded-2xl border border-emerald-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-400 focus:outline-none"
+            className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none"
             disabled={status === "loading"}
           />
         </label>
         <label className="space-y-2 text-sm text-slate-600">
-          <span>Favorite stores</span>
+          <span>Top brands</span>
           <input
             type="text"
-            name="stores"
-            placeholder="Amazon, Zara, IKEA"
-            className="w-full rounded-2xl border border-emerald-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-400 focus:outline-none"
+            name="brands"
+            placeholder="Apple, Samsung, Dyson"
+            className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none"
             disabled={status === "loading"}
           />
         </label>
@@ -90,10 +90,10 @@ export function WaitlistForm({ source = "hero" }: { source?: string }) {
 
       <div className="grid gap-4 md:grid-cols-2">
         <label className="space-y-2 text-sm text-slate-600">
-          <span>Shopping frequency</span>
+          <span>Purchase frequency</span>
           <select
             name="frequency"
-            className="w-full rounded-2xl border border-emerald-200 bg-white px-4 py-3 text-sm text-slate-900 focus:border-emerald-400 focus:outline-none"
+            className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 focus:border-indigo-400 focus:outline-none"
             disabled={status === "loading"}
             defaultValue=""
           >
@@ -111,7 +111,7 @@ export function WaitlistForm({ source = "hero" }: { source?: string }) {
           <span>Top category</span>
           <select
             name="category"
-            className="w-full rounded-2xl border border-emerald-200 bg-white px-4 py-3 text-sm text-slate-900 focus:border-emerald-400 focus:outline-none"
+            className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 focus:border-indigo-400 focus:outline-none"
             disabled={status === "loading"}
             defaultValue=""
           >
@@ -132,15 +132,15 @@ export function WaitlistForm({ source = "hero" }: { source?: string }) {
         <textarea
           name="pain"
           rows={3}
-          placeholder="Missing price drops, return windows, price match..."
-          className="w-full rounded-2xl border border-emerald-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-400 focus:outline-none"
+          placeholder="Losing receipts, missed deadlines, messy claims..."
+          className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none"
           disabled={status === "loading"}
         />
       </label>
 
       <button
         type="submit"
-        className="w-full rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-600 disabled:cursor-not-allowed disabled:opacity-60"
+        className="w-full rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-60"
         disabled={status === "loading" || status === "success"}
       >
         {status === "loading" ? "Submitting..." : "Join the waitlist"}
