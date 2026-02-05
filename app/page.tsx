@@ -25,6 +25,33 @@ const claimKit = [
   "Claim checklist",
 ];
 
+const features = [
+  {
+    title: "Auto warranty dates",
+    description: "We parse purchase dates and calculate timelines for you.",
+  },
+  {
+    title: "Serial + model storage",
+    description: "Save serials, order IDs, and proof of purchase in one place.",
+  },
+  {
+    title: "Claim-ready exports",
+    description: "One tap gives you a PDF bundle with everything needed.",
+  },
+  {
+    title: "Return window alerts",
+    description: "Never miss short return windows again.",
+  },
+  {
+    title: "Family sharing",
+    description: "Keep the whole household organized in a shared wallet.",
+  },
+  {
+    title: "Store policy shortcuts",
+    description: "Quick links to warranty and return policies by store.",
+  },
+];
+
 const categories = [
   "Electronics",
   "Appliances",
