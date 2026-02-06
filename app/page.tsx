@@ -149,12 +149,20 @@ export default function Home() {
               FAQ
             </a>
           </nav>
-          <a
-            className="rounded-full bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700"
-            href="#waitlist"
-          >
-            Join waitlist
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              className="rounded-full bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700"
+              href="#waitlist"
+            >
+              Join waitlist
+            </a>
+            <a
+              className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-300"
+              href="/upload"
+            >
+              Try MVP
+            </a>
+          </div>
         </div>
       </header>
 
